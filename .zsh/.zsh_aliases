@@ -1,0 +1,10 @@
+# alias config='/usr/bin/git --git-dir=/Users/jyoonits/.dotfiles/ --work-tree=/Users/jyoonits'
+alias vi="nvim"
+alias vim="nvim"
+alias srczsh="source ~/.zshrc"
+alias cdwork="cd ~/workspace"
+alias ll="ls -al"
+alias cp="cp -iv"
+alias mv="mv -iv"
+alias fucking="sudo"
+alias python="python3"

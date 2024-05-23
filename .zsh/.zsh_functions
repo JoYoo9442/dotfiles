@@ -1,0 +1,18 @@
+venv() {
+    source "$1"/bin/activate
+}
+
+javacl() {
+    javac -d "$1" "$2"/*.java
+}
+
+junit() {
+    java -jar ~/java/junit-platform-console-standalone-1.9.1.jar -cp "$1" --scan-class-path
+}
+
+junitc() {
+    # javac -d "$1" "$2"/*.java
+    # java -jar ~/java/junit-platform-console-standalone-1.9.1.jar -cp "$1" --scan-class-path
+    javacl "$1" "$2"
+    junit "$1"
+}
