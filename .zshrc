@@ -3,12 +3,12 @@ source ~/.zsh/.zsh_aliases
 source ~/.zsh/.zsh_functions
 
 # Rest of everything else that im too lazy to categorize
-eval "$(starship init zsh)"
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home"
-export JUNIT_HOME="$HOME/java"
+# eval "$(starship init zsh)"
+# source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# 
+# export JAVA_HOME="/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home"
+# export JUNIT_HOME="$HOME/java"
 
 # Building path
 PATH="$PATH:$JUNIT_HOME"
@@ -26,7 +26,14 @@ plugins=(...virtualenv)
 export VIRTUALENVWRAPPER_PYTHON='/Library/Frameworks/Python.framework/Versions/3.12/bin/python3'
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
-source /opt/homebrew/bin/virtualenvwrapper.sh
+# source /opt/homebrew/bin/virtualenvwrapper.sh
 
 # Finally env variables, use this for secrets
 source ~/.zsh_env
+
+# # asdf-vm stuff
+# source ~/.asdf/asdf.sh
+# # append completions to fpath
+# fpath=(${ASDF_DIR}/completions $fpath)
+# # initialise completions with ZSH's compinit
+# autoload -Uz compinit && compinit

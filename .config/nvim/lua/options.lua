@@ -29,9 +29,10 @@ o.number = true -- show line numbers on sidebar
 o.relativenumber = true -- relative line number
 
 -- vim.opt.noswapfile = true -- fuck swap files
-o.clipboard = "unnamed" -- public copy/paste register
+o.clipboard = "unnamedplus" -- public copy/paste register
 o.laststatus = 2 -- always show status bar
 -- o.background = "dark" -- fix issues with highlighting
 o.updatetime = 100
 
 -- o.cursorlineopt ='both' -- to enable cursorline!
+require("base46").toggle_transparency()
