@@ -3,7 +3,6 @@ source ~/.zsh/.zsh_aliases
 source ~/.zsh/.zsh_functions
 
 # Rest of everything else that im too lazy to categorize
-# eval "$(starship init zsh)"
 # source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # 
@@ -37,3 +36,5 @@ source ~/.zsh_env
 # fpath=(${ASDF_DIR}/completions $fpath)
 # # initialise completions with ZSH's compinit
 # autoload -Uz compinit && compinit
+
+eval "$(starship init zsh)"
