@@ -4,8 +4,8 @@ source ~/.zsh/.zsh_functions
 source ~/.zsh_env
 
 # Rest of everything else that im too lazy to categorize
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Building path
 # PATH="$PATH:$JAVA_HOME"

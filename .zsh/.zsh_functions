@@ -21,7 +21,8 @@ editconfig() {
     mv ~/.git.really ~/.git
     cd
     vim ~/.zshrc
-    echo "Don't forget to git add -f any files that are new"
+    echo "Don't forget to git add -f any files that are new."
+    echo "Also remember to run saveconfig."
 }
 
 saveconfig() {
