@@ -16,3 +16,18 @@ junitc() {
     javacl "$1" "$2"
     junit "$1"
 }
+
+editconfig() {
+    mv ~/.git.really ~/.git
+    cd
+    vim ~/.zshrc
+    echo "Don't forget to git add -f any files that are new"
+}
+
+saveconfig() {
+    git add .
+    git commit -m "Update config"
+    git push
+    mv ~/.git ~/.git.really
+    source ~/.zshrc
+}
