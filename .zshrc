@@ -7,10 +7,12 @@ eval "$(starship init zsh)"
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home"
+# export ATM9_JAVA="/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home"
 export JUNIT_HOME="$HOME/java"
 
 # Building path
+PATH="$PATH:$JAVA_HOME"
 PATH="$PATH:$JUNIT_HOME"
 PATH="/Library/Frameworks/Python.framework/Versions/3.12/bin:${PATH}"
 export PATH
